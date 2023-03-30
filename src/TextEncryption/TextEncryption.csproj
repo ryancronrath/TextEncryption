@@ -12,8 +12,18 @@
     <Authors>Ryan Cronrath</Authors>
     <Company>Ryan Cronrath</Company>
     <Product>Text Encryption</Product>
+    <RepositoryUrl>https://github.com/ryancronrath/TextEncryption</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>encryption decryption</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <License>MIT</License>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
+</ItemGroup>
 
 </Project>
