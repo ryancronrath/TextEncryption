@@ -7,17 +7,17 @@
 
     <PackageId>$(AssemblyName)</PackageId>
     <Version>1.0.0</Version>
-    <Title>Text Encryption</Title>
-    <Description>Encrypt and Decrypt text.</Description>
     <Authors>Ryan Cronrath</Authors>
-    <Company>Ryan Cronrath</Company>
-    <Product>Text Encryption</Product>
+    <Description>Encrypt and Decrypt text.</Description>
     <RepositoryUrl>https://github.com/ryancronrath/TextEncryption</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>encryption decryption</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Title>Text Encryption</Title>
+    <Company>Ryan Cronrath</Company>
+    <Product>Text Encryption</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <License>MIT</License>
   </PropertyGroup>
 
