@@ -17,7 +17,8 @@ using TextEncryption;
 OneTimePad onetimepad = new OneTimePad();
 
 // Create a key by providing a desired length for the key.
-// When encrypting text using a key using OneTimePad the key MUST be at least as long as the text you want to encrypt
+// When encrypting text using a key using OneTimePad the key MUST be 
+// at least as long as the text you want to encrypt
 var key = onetimepad.GenerateKey(100);
 
 ```
@@ -34,8 +35,10 @@ string unencryptedText = "This is plain text you would like to encrypt";
 // Generate a key (optional)
 var key = onetimepad.GenerateKey(unencryptedText.length);
 
-// Encrypt the text by passing in the text you want to encrypt and a key that contains, at a minimum, the same number of characters as the unenecrypted text.
-string? encryptedText = onetimepad.Encrypt(unencryptedText, key);
+// Encrypt the text by passing in the text you want to encrypt and a
+// key that contains, at a minimum, the same number of characters as 
+// the unenecrypted text.
+string encryptedText = onetimepad.Encrypt(unencryptedText, key);
 ```
 
 ### Decrypt Text
@@ -50,7 +53,7 @@ string key = "Your key, which could be any string of text.";
 string encryptedText = ">1uB~H&O`@`i$;SMc530?s67/{4)m96`$O"iA8*ZAkw";
 
 // Decrypt the text by passing in the encrypted text and the key
-string? unencryptedText = onetimepad.Decrypt(encryptedText, key);
+string unencryptedText = onetimepad.Decrypt(encryptedText, key);
 ```
 
 ### Note
